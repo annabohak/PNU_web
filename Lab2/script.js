@@ -10,13 +10,10 @@ function hypotenuse() {
 
   if (l1 >= 0 && l2 >= 0 && l1 != '' && l2 != '') {
     result = Math.sqrt(l1 ** 2 + l2 ** 2).toFixed(2);
-    $('.result-box').css('background-color', 'forestgreen');
     $('#message').text('Гіпотенуза: ');
     $('#result').text(result);
   }
   else {
-    $('.result-box').css('background-color', 'indianred');
-    $('#message').text('Помилка: ');
-    $('#result').text('не правильні сторони!');
+    $('#message').text('Помилка! Введіть сторони ще раз');
   }
 }

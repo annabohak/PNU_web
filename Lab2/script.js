@@ -14,6 +14,7 @@ function hypotenuse() {
     $('#result').text(result);
   }
   else {
-    $('#message').text('Помилка! Введіть сторони ще раз');
+    $('#message').text('Помилка!');
+    $('#result').text('Введіть сторони ще раз');
   }
 }

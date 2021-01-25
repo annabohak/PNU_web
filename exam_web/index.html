@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" ng-app="my_list">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="box">
+    <div ng-controller="buy" class="container">
+      <div class="header">Дитячі іграшки</div>
+      <p ng-repeat="item in data.buy">
+        {{item.quantity}} {{item.name}}
+        <button ng-click="buy(item.id)" class="button button-position">Видалити</button>
+      </p>
+      
+    </div>
+  </div>
+</body>
+
+</html>
